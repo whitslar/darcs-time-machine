@@ -49,11 +49,14 @@ class GitRevisionView
   @_loadRevision: (file, hash, stdout, exit) ->
     showArgs = [
       "show",
-      "#{hash}:./#{path.basename(file)}"
+      "contents",
+      "-h",
+      "#{hash}",
+      "./#{path.basename(file)}"
     ]
     # console.log "calling git"
     new BufferedProcess {
-      command: "git",
+      command: "darcs",
       args: showArgs,
       options: { cwd:path.dirname(file) },
       stdout,

@@ -14,7 +14,7 @@ module.exports = GitTimeMachine =
     @subscriptions = new CompositeDisposable
 
     # Register command that toggles this view
-    @subscriptions.add atom.commands.add 'atom-workspace', 'git-time-machine:toggle': => @toggle()
+    @subscriptions.add atom.commands.add 'atom-workspace', 'darcs-time-machine:toggle': => @toggle()
     atom.workspace.onDidChangeActivePaneItem (editor) => @_onDidChangeActivePaneItem()
 
 

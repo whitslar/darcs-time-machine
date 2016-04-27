@@ -1,20 +1,20 @@
 {
-  "name": "git-time-machine",
+  "name": "darcs-time-machine",
   "main": "./lib/git-time-machine",
   "version": "1.4.1",
-  "description": "Visually interact with git commit history for a file",
+  "description": "Visually interact with darcs changes history for a file",
   "keywords": [
-    "git",
-    "git-history",
+    "darcs",
+    "darcs-history",
     "history",
     "time",
     "d3",
     "atom"
   ],
   "activationCommands": {
-    "atom-workspace": "git-time-machine:toggle"
+    "atom-workspace": "darcs-time-machine:toggle"
   },
-  "repository": "https://github.com/littlebee/git-time-machine",
+  "repository": "https://github.com/whitslar/darcs-time-machine",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
@@ -26,7 +26,7 @@
     "moment": "^2.10.6",
     "underscore-plus": "1.x",
     "split-diff": "git+https://github.com/mupchrch/split-diff.git#v0.6.3",
-    "git-log-utils": "0.2.1"
+    "darcs-log-utils": "git://github.com/whitslar/darcs-log-utils.git"
   },
   "devDependencies": {}
 }

@@ -3,18 +3,18 @@
   'atom-text-editor': [
     {
       'label': 'Toggle git-time-machine view'
-      'command': 'git-time-machine:toggle'
+      'command': 'darcs-time-machine:toggle'
     }
   ]
 'menu': [
   {
     'label': 'Packages'
     'submenu': [
-      'label': 'git-time-machine'
+      'label': 'Darcs Time Machine'
       'submenu': [
         {
           'label': 'Toggle for current file'
-          'command': 'git-time-machine:toggle'
+          'command': 'darcs-time-machine:toggle'
         }
       ]
     ]
